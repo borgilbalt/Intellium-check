@@ -41,18 +41,15 @@ const Link = styled.a`
 `;
 
 const Footer = (props: { isFixed?: boolean }): JSX.Element => {
-  const licenseUrl = 'https://github.com/lissy93/web-check/blob/master/LICENSE';
-  const authorUrl = 'https://aliciasykes.com';
-  const githubUrl = 'https://github.com/lissy93/web-check';
+  const authorUrl = 'https://intellium.network/';
   return (
   <StyledFooter style={props.isFixed ? {position: 'fixed'} : {}}>
     <span>
-      View source at <Link href={githubUrl}>github.com/lissy93/web-check</Link>
+    About Intellium <Link href="https://docs.intellium.network/">docs.intellium.network</Link>
     </span>
     <span>
-      <Link href="/about">Web-Check</Link> is
-      licensed under <Link href={licenseUrl}>MIT</Link> -
-      © <Link href={authorUrl}>Alicia Sykes</Link> 2023
+      <Link href="https://check.intellium.network/">Intellium Check</Link> is
+      licensed under © <Link href={authorUrl}>Intellium Inc</Link> 2023
     </span>
   </StyledFooter>
   );
